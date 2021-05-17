@@ -1,0 +1,29 @@
+- var pageTitle = 'Kagayaku Karate contacts'
+
+doctype html
+html(lang="en")
+    head
+        include modules/head
+        title= pageTitle
+    body
+        .page
+            include modules/header
+
+            .body
+                .container
+                    .body__header
+                        h1.body__title(data-aos="zoom-in" data-aos-delay="100") Contacts
+                    .body__content
+                        .contacts
+                            p.contacts__text(data-aos="zoom-in" data-aos-delay="200") Email:<br>
+                                a.contacts__link(
+                                    href="mailto:kagayaku.karate@gmail.com"
+                                    title="Click to email")
+                                    | kagayaku.karate@gmail.com
+                            p.contacts__text(data-aos="zoom-in" data-aos-delay="300") Tel:<br>
+                                a.contacts__link(
+                                    href="tel:+79997900966"
+                                    title="Click to call")
+                                    | +7 (999) 790-09-66
+            
+            include modules/footer

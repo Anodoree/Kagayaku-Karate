@@ -1,0 +1,34 @@
+- var youTube = 'https://www.youtube.com/channel/UCGEs2qk0iHL3aziI2LHveLA'
+- var faceBook = 'https://www.facebook.com/Kagayaku-Karate-625738671230510/'
+- var instaGram = 'https://www.instagram.com/dr._artur_aloyan/'
+
+header.header
+    .header__top
+        .container
+            .social
+                ul.social__list
+                    li.social__item
+                        a.social__link(href= youTube target="_blank" rel="nofollow" title="YouTube")
+                            img.social__img.social__img--header(src="../images/socials/youtube-v1.png", alt="YouTube")
+                    li.social__item
+                        a.social__link(href= faceBook target="_blank" rel="nofollow" title="Facebook")
+                            img.social__img.social__img--header(src="../images/socials/facebook-v1.png", alt="Facebook")
+                    li.social__item
+                        a.social__link(href= instaGram target="_blank" rel="nofollow" title="Instagram")
+                            img.social__img.social__img--header(src="../images/socials/instagram-v1.png", alt="Instagram")
+    .header__base
+        .container
+            .header__base-inner
+                .header__logo
+                    a(href="../index.html", title="To home page")
+                        img(src="../images/logo-v1.png", alt="Logo")
+                nav.nav
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="../about.html") About
+                        li.nav__item
+                            a.nav__link(href="../social-media.html") Social&nbsp;media
+                        li.nav__item
+                            a.nav__link(href="../events.html") Events
+                        li.nav__item
+                            a.nav__link(href="../contacts.html") Contacts

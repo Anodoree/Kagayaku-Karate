@@ -1,0 +1,62 @@
+- var pageTitle = 'Kagayaku Karate Social Media'
+
+doctype html
+html(lang="en")
+    head
+        include modules/head
+        title= pageTitle
+    body
+        .page
+            include modules/header
+            
+            .body
+                .container
+                    .body__header
+                        h1.body__title Social Media
+                .container
+                    .body__content
+                        article.article
+                            .article__inner 
+                                h2.article__title How to punch a heavy punch bag
+                                iframe.iframe(data-aos="fade-in" width="560" height="315" src="https://www.youtube.com/embed/8-TZ0pF-4E0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                                p.article__text
+                                    | Practicing Tsuki on a heavy punch bag. Kihon, Makivara, punch bags. Usually, it took some time to feel your hands and to feel your punches. Be patient. Practice everyday. The result will come.
+                        article.article
+                            .article__inner 
+                                h2.article__title Mawashi geri. Practice on a heavy punch bag
+                                iframe.iframe(data-aos="fade-in" width="560" height="315" src="https://www.youtube.com/embed/nDynSSK_g1k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                                p.article__text
+                                    | Practicing Mawashi geri technique on a heavy punch bag. It is not so hard to learn a mawashi geri. The hardest thing is to make your mawashi geri move to become a real KICK. To reach that,you should practice on everything you have got: kihon, makivaras, shadow fight etc. But, it is not enough. Practice on a heavy punch bag without any protection and equipment. Prepare your body first. Success=hard work. Good luck.
+                        article.article
+                            .article__inner 
+                                h2.article__title Kagayaku Karate morning warm-up
+                                iframe.iframe(data-aos="fade-in" width="560" height="315" src="https://www.youtube.com/embed/-W69ac_f6N0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                                p.article__text
+                                    | Kagayaku Karate chief instructor Dr. Artur Aloyan visited KKWF Russian affiliate. Morning pre-training warm-up.
+                        article.article
+                            .article__inner 
+                                h2.article__title Kumite demonstration, Tameshiwari
+                                iframe.iframe(data-aos="fade-in" width="560" height="315" src="https://www.youtube.com/embed/swqSD13CBes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                                p.article__text
+                                    | Martial Arts Festival. March 2018.
+                        article.article
+                            .article__inner 
+                                h2.article__title Kagayaku Karate-do presentation in 1999
+                                iframe.iframe(data-aos="fade-in" width="560" height="315" src="https://www.youtube.com/embed/KYGJ3CmFSlA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+                                p.article__text
+                                    | Kagayaku Karate-do. First official presentation. Martial Arts Festival 1999
+                        p.body__text(data-aos="zoom-in")
+                            | You can see other content on our pages in social networks
+                        .social.social--social-media(data-aos="zoom-in")
+                            ul.social__list.social__list--social-media
+                                li.social__item
+                                    a.social__link(href= youTube target="_blank" rel="nofollow" title="YouTube")
+                                        img.social__img.social__img--social-media(src="images/socials/youtube-v1.png", alt="YouTube")
+                                li.social__item
+                                    a.social__link(href= faceBook target="_blank" rel="nofollow" title="Facebook")
+                                        img.social__img.social__img--social-media(src="images/socials/facebook-v1.png", alt="Facebook")
+                                li.social__item
+                                    a.social__link(href= instaGram target="_blank" rel="nofollow" title="Instagram")
+                                        img.social__img.social__img--social-media(src="images/socials/instagram-v1.png", alt="Instagram")
+
+            include modules/footer

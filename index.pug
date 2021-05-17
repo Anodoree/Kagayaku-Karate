@@ -1,0 +1,65 @@
+- var pageTitle = 'Kagayaku Karate'
+- var youTube = 'https://www.youtube.com/channel/UCGEs2qk0iHL3aziI2LHveLA'
+- var faceBook = 'https://www.facebook.com/Kagayaku-Karate-625738671230510/'
+- var instaGram = 'https://www.instagram.com/dr._artur_aloyan/'
+
+doctype html
+html(lang="en")
+    head
+        include modules/head
+        meta(name="description" content="International Kagayaku Karate School. The Official Site")
+        title= pageTitle
+    body
+        .page.main-page
+            .main-page__logo-box 
+                img.main-page__logo(
+                    src="images/main-logo-300x300-2.png"
+                    alt="Logo"
+                    data-aos="zoom-in-up"
+                    data-aos-duration="1000"
+                    )
+            .main-page__title-box
+                h1.main-page__title(
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                    data-aos-offset="45"
+                    )
+                    | International Kagayaku Karate School
+                span.main-page__subtitle(
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                    data-aos-offset="45"
+                    )
+                    | The Official site
+            .social.main-page__social(
+                data-aos="zoom-in"
+                data-aos-delay="500"
+                data-aos-offset="45"
+                )
+                ul.social__list.social__list--main-page
+                    li.social__item.social__item--main-page
+                        a.social__link(href= youTube target="_black" rel="nofollow" title="YouTube")
+                            img.social__img.social__img--main-page(src="images/socials/youtube-v1.png", alt="YouTube")
+                    li.social__item.social__item--main-page
+                        a.social__link(href= faceBook target="_black" rel="nofollow" title="Facebook")
+                            img.social__img.social__img--main-page(src="images/socials/facebook-v1.png", alt="Facebook")
+                    li.social__item.social__item--main-page
+                        a.social__link(href= instaGram target="_black" rel="nofollow" title="Instagram")
+                            img.social__img.social__img--main-page(src="images/socials/instagram-v1.png", alt="Instagram")
+            nav.nav(
+                data-aos="zoom-in-up"
+                data-aos-delay="500"
+                data-aos-offset="45"
+                )
+                ul.nav__list.nav__list--main-page
+                    li.nav__item.nav__item--main-page
+                        a.nav__link.nav__link--main-page(href="about.html") About
+                    li.nav__item.nav__item--main-page
+                        a.nav__link.nav__link--main-page(href="social-media.html") Social&nbsp;media
+                    li.nav__item.nav__item--main-page
+                        a.nav__link.nav__link--main-page(href="events.html") Events
+                    li.nav__item.nav__item--main-page
+                        a.nav__link.nav__link--main-page(href="contacts.html") Contacts
+
+script(type="text/javascript", src="https://unpkg.com/aos@next/dist/aos.js")
+script(type="text/javascript", src= "js/app.js")

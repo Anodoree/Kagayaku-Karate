@@ -1,0 +1,348 @@
+@import 'reset';
+@import 'global';
+@import 'breakpoints';
+
+
+.main-page {
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: default;
+    overflow: hidden;
+    &__title-box {
+        flex-basis: 15vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 .5rem;
+    }
+    &__title {
+        font-size: 4rem;
+        @include breakpoint (xxs) {
+            font-size: 3.3rem;
+        }
+    }
+    &__subtitle {
+        margin: 1.5rem 0;
+    }
+    &__social {
+        min-height: 10rem;
+    }
+}
+
+.header {
+    &__top {
+        background-color: $white;
+        border-bottom: 3px solid $brand;
+    }
+    &__base {
+        background-color: $white;
+        margin-bottom: 3rem;
+    }
+    &__base-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    &--social-media {
+        display: block;
+    }
+    &__list {
+        display: flex;
+    }
+    &__list--social-media {
+        justify-content: space-between;
+        max-width: 35rem;
+        margin: 1rem auto 3rem;
+    }
+    &__item {
+        margin: .5rem;
+        text-align: center;
+    }
+    &__item--main-page {
+        margin: .5rem 2rem;
+    }
+    &__img {
+        height: 1.8rem;
+        width: 1.8rem;
+        transition: transform 0.3s,
+                    filter 0.3s;
+    }
+    &__img--main-page {
+        height: 3.4rem;
+        width: 3.4rem;
+    }
+    &__img--main-page:hover {
+        transform:  scale(1.5);
+        filter: contrast(100%)
+                brightness(0%);
+    }
+    &__img--header {
+        filter: contrast(50%)
+                sepia(100%)
+                hue-rotate(19deg)
+                brightness(71%)
+                saturate(110%);
+    }
+    &__img--header:hover {
+        transform:  scale(1.2)
+                    translateX(-2px);
+    }
+    &__img--social-media {
+        height: 6.6rem;
+        width: 6.6rem;
+        filter: contrast(100%)
+                brightness(0%);
+    }
+    &__img--social-media:hover {
+        transform: scale(0.8);
+    }
+}
+
+.nav {
+    text-transform: uppercase;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__list--footer {
+        @include breakpoint (xs) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    &__list--main-page {
+        justify-content: space-around;
+        @include breakpoint (md) {
+            flex-direction: column;
+        }
+    }
+    &__item {
+        margin: 1rem;
+    }
+    &__item--main-page {
+        margin: 1.5rem 3rem;
+        @include breakpoint (md) {
+            margin: 1.8rem;
+        }
+    }
+    &__item--footer {
+        margin: 1.5rem;
+    }
+    &__link {
+        color: $black;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        transition: color .3s;
+    }
+    &__link:hover {
+        color: $brand;
+    }
+    &__link--main-page {
+        color: $white;
+        font-size: 2.4rem;
+        @include breakpoint (xxs) {
+            font-size: 2rem;
+        }
+    }
+    &__link--main-page:hover {
+        color: $black;
+    }
+    &__link--footer {
+        color: $white;
+        font-weight: normal;
+        letter-spacing: .2rem;
+    }
+}
+
+.body {
+    &__header {
+        background-color: $white;
+        margin-bottom: 3rem;
+    }
+    &__title {
+        font-size: 3rem;
+        text-align: center;
+        padding: 1rem 3rem;
+        text-transform: uppercase;
+        @include breakpoint (md) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__content {
+        background-color: $white;
+        padding: 3rem;
+        @include breakpoint (md) {
+            padding: 1rem;
+        }
+    }
+    &__text {
+        text-align: center;
+        margin: 3rem;
+    }
+}
+.article {
+    text-align: center;
+    overflow-x: hidden;
+    &__inner {
+        border-bottom: 3px solid $brand;
+        margin-bottom: 4rem;
+    }
+    &__title {
+        font-size: 2.4rem;
+        letter-spacing: .1rem;
+        padding: 2rem;
+        text-transform: uppercase;
+    }
+    &__img {
+        max-height: 50rem;
+        margin: auto;
+        padding: 1.5rem;
+        transition: transform .3s;
+    }
+    &__img:hover {
+        transform: scale(1.1);
+    }
+    &__text {
+        margin: 3rem;
+        line-height: 1.5;
+        @include breakpoint (md) {
+            margin: 1rem;
+        }
+    }
+    &__list {
+        margin: 2rem;
+        line-height: 2;
+        list-style-type: decimal;
+    }
+    &__list-item {
+        list-style-position: inside;
+    }
+    &__list-item--line::before {
+        content: "— ";
+    }
+    &__list-item--disc {
+        list-style-type: disc;
+    }
+    &__link {
+        color: inherit;
+        margin: 2rem;
+        transition: text-shadow .3s;
+    }
+    &__link:hover {
+        text-shadow: 1px 0 $brand;
+    }
+}
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__text {
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: .1rem;
+        margin: 2rem 0;
+        @include breakpoint (sm) {
+            font-size: 1.8rem;
+        }
+        @include breakpoint (xxxs) {
+            font-size: 1.6rem;
+        }
+    }
+    &__link {
+        display: inline-block;
+        font-weight: normal;
+        border-bottom: 3px solid $brand;
+        color: inherit;
+        padding: .5rem 0;
+        margin: 1rem;
+        transition: transform .2s;
+        @include breakpoint (xxxs) {
+            margin:.5rem 0;
+        }
+    }
+    &__link:hover {
+        transform: scale(0.9);
+    }
+}
+
+
+.footer {
+    font-size: 1.4rem;
+    &__inner {
+        background-color: $dark;
+        color: $white;
+        margin-top: 3rem;
+        padding: 1rem 0;
+    }
+    &__copyright {
+        text-align: center;
+        margin: .5rem;
+    }
+}
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: -40px;
+    z-index: 9;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background: $white;
+    outline: 1px solid $white;
+    color: $dark;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background: $dark;
+        color: $white;
+        outline: 1px solid $brand;
+    }
+    &--show {
+        right: 20px;
+        @include breakpoint (xl) {
+            background: $brand;
+            right: 55px;
+        }
+        @include breakpoint (lg) {
+            background: $brand;
+            right: 30px;
+        }
+        @include breakpoint (md) {
+            right: 20px;
+        }
+    }
+}
+
+
+
+.iframe {
+    max-width: 100%;
+    @include breakpoint (xs) {
+        height: 270px;
+    }
+    @include breakpoint (xxs) {
+        height: 240px;
+    }
+    @include breakpoint (xxxs) {
+        height: 190px;
+    }
+}
+
+@import 'mobile-menu';

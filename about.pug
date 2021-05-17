@@ -1,0 +1,25 @@
+- var pageTitle = 'About Kagayaku Karate'
+
+doctype html
+html(lang="en")
+    head
+        include modules/head
+        title= pageTitle
+    body
+        .page
+            include modules/header
+            
+            .body
+                .container
+                    .body__header
+                        h1.body__title About Kagayaku Karate
+                    .body__content
+                        article.article#article-chief-instructor(data-aos="fade-up")
+                            .article__inner 
+                                h2.article__title Chief Instructor
+                                img.article__img(src="images/main/photo_2019-02-26_00-56-53.jpg", alt="")
+                                p.article__text
+                                    |Doctor Artur Aloyan (august 27, 1978) is an international expert of the Traditional Karate and Martial Arts. For more than 12 years Artur Aloyan practiced his Karate with Master Mikio Yahara side by side in Japan. By this day Dr. Artur is a President of Kagayaku Karate-Do World Federation (KKWF), Chief instructor of Kagayaku Karate-Do World Federation (KKWF), two-time World Karate Champion (both tournaments in 2010 in Greece), Europe Karate Champion (2008 Italy), MMA Oriental European Cup Champion (2009 Moldova), Multiple Karate Champion of Russia in Kumite and Kata, a Prizewinner of Multiple International Martial Arts and Combat Karate Tournaments...
+                                a.article__link(href="about/chief-instructor.html") Read more ↪
+            
+            include modules/footer

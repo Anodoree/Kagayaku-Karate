@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Sensation;
+    src: url(../fonts/sansation-bold_[allfont.ru].ttf);
+    src: url(../fonts/sansation-regular_[allfont.ru].ttf);
+}
+
+$brand: #A8A878;
+$white: #fff;
+$black: #000;
+$dark: #111;
+
+::-webkit-scrollbar {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+::-webkit-scrollbar-track {
+    background: $white;
+}
+::-webkit-scrollbar-thumb {
+    border: 1px solid $white;
+    background: $brand;
+}
+
+html, body {
+    font-size: 10px;
+    font-family: Sensation, sans-serif;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $brand;
+    min-height: 100vh;
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

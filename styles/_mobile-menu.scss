@@ -1,0 +1,102 @@
+.mobile-header{
+    &__btn {
+        display: none;
+        background-color: $white;
+        border: 3px solid $brand;
+        color: $brand;
+        z-index: 2;
+    }
+    &__btn-span {
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: $brand;
+        border-radius: 3px;
+        margin: 5px 0;
+    }
+}
+
+@include breakpoint (md) {
+    .mobile-header {
+        &__top {
+            position: absolute;
+            z-index: 1;
+            top: 278px;
+            right: 100%;
+            left: -100%;
+            transition: top .1s,
+                        box-shadow .1s,
+                        left .1s,
+                        right .1s;
+        }
+        &__base {
+            min-height: 5rem;
+        }
+        &__logo {
+            z-index: 2;
+        }
+        &__logo-img {
+            max-height: 50px;
+        }
+        &__btn {
+            display: block;
+        }
+    }
+    
+    .mobile-social {
+        justify-content: center;
+        &__item {
+            margin: 2.5rem;
+        }
+        &__img {
+            height: 2.8rem;
+            width: 2.8rem;
+            transition: transform 0.3s,
+                        filter 0.3s;
+        }
+        &__img:hover {
+            transform:  scale(1.3)
+                        translateX(0px);
+        }
+    }
+    
+    .mobile-nav {
+        position: absolute;
+        z-index: 1;
+        top: 49px;
+        right: 100%;
+        left: -100%;
+        background-color: $white;
+        transition: top .1s,
+                    left .1s,
+                    right .1s;
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            margin: 2rem 0;
+        }
+        &__link {
+            color: $black;
+            font-weight: bold;
+            letter-spacing: .1rem;
+            transition: color .3s;
+        }
+        &__link:hover {
+            color: $brand;
+        }
+    }
+}
+
+.mobile-nav--active {
+    top: 49px;
+    left: 0;
+    right: 0;
+}
+.mobile-header__top--active {
+    top:278px;
+    left: 0;
+    right: 0;
+    box-shadow: 0 50px 100px 150px $brand;
+}
