@@ -208,10 +208,6 @@
         max-height: 50rem;
         margin: auto;
         padding: 1.5rem;
-        transition: transform .3s;
-    }
-    &__img:hover {
-        transform: scale(1.1);
     }
     &__text {
         margin: 3rem;
@@ -219,6 +215,15 @@
         @include breakpoint (md) {
             margin: 1rem;
         }
+    }
+    &__text-link {
+        display: inline;
+        color: inherit;
+        text-decoration: underline;
+        transition: color .3s;
+    }
+    &__text-link:hover {
+        color: $brand;
     }
     &__list {
         margin: 2rem;
