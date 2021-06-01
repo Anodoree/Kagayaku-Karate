@@ -1,4 +1,5 @@
 - var pageTitle = 'Kagayaku Karate'
+- var pageDescription = 'International Kagayaku Karate School. The Official Site'
 - var youTube = 'https://www.youtube.com/channel/UCGEs2qk0iHL3aziI2LHveLA'
 - var faceBook = 'https://www.facebook.com/Kagayaku-Karate-625738671230510/'
 - var instaGram = 'https://www.instagram.com/dr._artur_aloyan/'
@@ -7,7 +8,7 @@ doctype html
 html(lang="en")
     head
         include modules/head
-        meta(name="description" content="International Kagayaku Karate School. The Official Site")
+        meta(name="description" content= pageDescription)
         title= pageTitle
     body
         .page.main-page
@@ -76,5 +77,6 @@ html(lang="en")
                     li.nav__item.nav__item--main-page
                         a.nav__link.nav__link--main-page(href="contacts.html") Contacts
 
-script(type="text/javascript", src="https://unpkg.com/aos@next/dist/aos.js")
-script(type="text/javascript", src= "js/app.js")
+        script(type="text/javascript", src="https://unpkg.com/aos@next/dist/aos.js")
+        script(type="text/javascript", src= "js/app.js")
+        include modules/metrika
